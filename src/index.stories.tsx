@@ -23,6 +23,12 @@ const links: Link[] = [
   { input: "1", output: "3" },
   { input: "2", output: "3" },
   { input: "1", output: "4" },
+  { input: "4", output: "10" },
+  { input: "8", output: "9" },
+  { input: "7", output: "8" },
+  { input: "9", output: "7" },
+  { input: "6", output: "3" },
+  { input: "9", output: "3" },
 ];
 
 const Template: Story<ComponentProps<typeof Diagram>> = ({

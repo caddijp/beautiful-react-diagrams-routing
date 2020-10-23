@@ -10,13 +10,13 @@ export function redistribute<P>({
   links,
 }: DiagramSchema<P>): DiagramSchema<P> {
   g.setGraph({});
-  g.setDefaultEdgeLabel(function () {
-    return {};
-  });
+  g.setDefaultEdgeLabel(() => ({}));
 
-  nodes.map(({ id, coordinates: [x, y] }) => {
-    g.setNode(id, { width: 10, height: 10, x, y });
-  });
+  nodes.map(({ id, coordinates: [x, y] }) =>
+    g.setNode(id, { width: 100, height: 100, x, y })
+  );
+
+  links?.map(({ input, output }) => g.setEdge({ v: output, w: input }));
 
   dagre.layout(g);
 
