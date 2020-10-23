@@ -18,8 +18,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 242.5,
+            "top": 350,
           }
         }
       >
@@ -41,8 +41,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 435,
+            "top": 200,
           }
         }
       >
@@ -64,8 +64,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 350,
+            "top": 50,
           }
         }
       >
@@ -87,8 +87,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 50,
+            "top": 200,
           }
         }
       >
@@ -110,8 +110,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 200,
+            "top": 50,
           }
         }
       >
@@ -133,8 +133,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 285,
+            "top": 200,
           }
         }
       >
@@ -156,8 +156,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 585,
+            "top": 500,
           }
         }
       >
@@ -179,8 +179,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 627.5,
+            "top": 350,
           }
         }
       >
@@ -202,8 +202,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 585,
+            "top": 200,
           }
         }
       >
@@ -225,8 +225,8 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
         className="bi bi-diagram-node bi-diagram-node-default"
         style={
           Object {
-            "left": 0,
-            "top": 0,
+            "left": 50,
+            "top": 50,
           }
         }
       >
@@ -247,6 +247,104 @@ exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
       <svg
         className="bi bi-link-canvas-layer"
       >
+        <g
+          className="bi-diagram-link"
+        >
+          <path
+            className="bi-link-ghost"
+            d=""
+            onDoubleClick={[Function]}
+          />
+          <path
+            className="bi-link-path"
+            d=""
+            onDoubleClick={[Function]}
+          />
+        </g>
+        <g
+          className="bi-diagram-link"
+        >
+          <path
+            className="bi-link-ghost"
+            d=""
+            onDoubleClick={[Function]}
+          />
+          <path
+            className="bi-link-path"
+            d=""
+            onDoubleClick={[Function]}
+          />
+        </g>
+        <g
+          className="bi-diagram-link"
+        >
+          <path
+            className="bi-link-ghost"
+            d=""
+            onDoubleClick={[Function]}
+          />
+          <path
+            className="bi-link-path"
+            d=""
+            onDoubleClick={[Function]}
+          />
+        </g>
+        <g
+          className="bi-diagram-link"
+        >
+          <path
+            className="bi-link-ghost"
+            d=""
+            onDoubleClick={[Function]}
+          />
+          <path
+            className="bi-link-path"
+            d=""
+            onDoubleClick={[Function]}
+          />
+        </g>
+        <g
+          className="bi-diagram-link"
+        >
+          <path
+            className="bi-link-ghost"
+            d=""
+            onDoubleClick={[Function]}
+          />
+          <path
+            className="bi-link-path"
+            d=""
+            onDoubleClick={[Function]}
+          />
+        </g>
+        <g
+          className="bi-diagram-link"
+        >
+          <path
+            className="bi-link-ghost"
+            d=""
+            onDoubleClick={[Function]}
+          />
+          <path
+            className="bi-link-path"
+            d=""
+            onDoubleClick={[Function]}
+          />
+        </g>
+        <g
+          className="bi-diagram-link"
+        >
+          <path
+            className="bi-link-ghost"
+            d=""
+            onDoubleClick={[Function]}
+          />
+          <path
+            className="bi-link-path"
+            d=""
+            onDoubleClick={[Function]}
+          />
+        </g>
         <g
           className="bi-diagram-link"
         >
