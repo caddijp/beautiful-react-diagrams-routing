@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileProperties Diagrams Re Routing Diagram 1`] = `
+<div
+  style={
+    Object {
+      "height": "200rem",
+    }
+  }
+>
+  <div
+    className="bi bi-diagram"
+  >
+    <div
+      className="bi-diagram-canvas"
+    >
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        1
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        2
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        3
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        4
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        5
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        6
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        7
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        8
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        9
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <div
+        className="bi bi-diagram-node bi-diagram-node-default"
+        style={
+          Object {
+            "left": 0,
+            "top": 0,
+          }
+        }
+      >
+        10
+        <div
+          className="bi-port-wrapper"
+        >
+          <div
+            className="bi-input-ports"
+          />
+          <div
+            className="bi-output-ports"
+          />
+        </div>
+      </div>
+      <svg
+        className="bi bi-link-canvas-layer"
+      />
+    </div>
+  </div>
+</div>
+`;
