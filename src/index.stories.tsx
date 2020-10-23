@@ -4,6 +4,7 @@ import type { Link, Node } from "beautiful-react-diagrams/@types/DiagramSchema";
 import "beautiful-react-diagrams/styles.css";
 import React, { ComponentProps } from "react";
 import { Factory } from "rosie";
+import { redistribute } from ".";
 
 const meta: Meta = {
   title: "Diagrams",
@@ -20,14 +21,21 @@ const nodes = new Factory<Node<unknown>>()
 const links: Link[] = [
   { input: "1", output: "2" },
   { input: "1", output: "3" },
+  { input: "2", output: "3" },
   { input: "1", output: "4" },
+  { input: "4", output: "10" },
+  { input: "8", output: "9" },
+  { input: "7", output: "8" },
+  { input: "9", output: "7" },
+  { input: "6", output: "3" },
+  { input: "9", output: "3" },
 ];
 
 const Template: Story<ComponentProps<typeof Diagram>> = ({
   schema: initialSchema,
 }) => {
   const [schema, { onChange }] = useSchema(
-    initialSchema || { nodes: [], links: [] }
+    redistribute(initialSchema || { nodes: [], links: [] })
   );
 
   return (
