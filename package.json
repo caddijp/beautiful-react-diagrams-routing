@@ -1,0 +1,68 @@
+{
+  "name": "beautiful-react-diagrams-routing",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "repository": "ssh://git@github.com/caddijp/beautiful-react-diagrams-routing.git",
+  "author": "Keisuke Kan <keisuke_kan@caddi.jp>",
+  "main": "index.js",
+  "scripts": {
+    "lint": "run-p -l lint:*",
+    "lint:es": "eslint . --ext=ts,tsx",
+    "lint:prettier": "prettier --check \"src/**/*.{js,ts,tsx}\"",
+    "test": "jest",
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
+  },
+  "peerDependencies": {
+    "beautiful-react-diagrams": "^0.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@caddijp/eslint-config": "^0.0.15",
+    "@storybook/addon-actions": "^6.0.26",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/addon-storyshots": "^6.0.26",
+    "@storybook/react": "^6.0.26",
+    "@types/dagre": "^0.7.44",
+    "@types/jest": "^26.0.15",
+    "@types/rosie": "0.0.38",
+    "babel-loader": "^8.1.0",
+    "beautiful-react-diagrams": "^0.3.1",
+    "dagre": "^0.8.5",
+    "eslint": "^7.11.0",
+    "husky": "^4.3.0",
+    "jest": "^26.6.0",
+    "lint-staged": "^10.4.2",
+    "prettier": "^2.1.2",
+    "prettier-plugin-organize-imports": "^1.1.1",
+    "prettier-plugin-package": "^1.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-is": "^16.13.1",
+    "react-test-renderer": "^16.14.0",
+    "rosie": "^2.0.1",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@caddijp/eslint-config",
+      "prettier/react"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{js,jsx,json,yml,md}": [
+      "prettier --write"
+    ]
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
