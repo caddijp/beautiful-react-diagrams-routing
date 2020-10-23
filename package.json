@@ -11,6 +11,7 @@
     "lint:es": "eslint . --ext=ts,tsx",
     "lint:prettier": "prettier --check \"src/**/*.{js,ts,tsx}\"",
     "test": "jest",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006"
   },
@@ -20,6 +21,8 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@caddijp/eslint-config": "^0.0.15",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@storybook/addon-actions": "^6.0.26",
     "@storybook/addon-essentials": "^6.0.26",
     "@storybook/addon-links": "^6.0.26",
@@ -30,6 +33,7 @@
     "@types/rosie": "0.0.38",
     "babel-loader": "^8.1.0",
     "beautiful-react-diagrams": "^0.3.1",
+    "conventional-changelog-cli": "^2.1.0",
     "dagre": "^0.8.5",
     "eslint": "^7.11.0",
     "husky": "^4.3.0",
