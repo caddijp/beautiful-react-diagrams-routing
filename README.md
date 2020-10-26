@@ -4,11 +4,21 @@
 
 ## Install
 
-- TBD
+    npm install caddijp/beautiful-react-diagrams-routing#build
 
 ## Usage
 
-- TBD
+```typescript
+  const [schema, { onChange }] = useSchema(
+    redistribute(initialSchema || { nodes: [], links: [] })
+  );
+
+  return (
+    <div style={{ height: "200rem" }}>
+      <Diagram schema={schema} onChange={onChange} />
+    </div>
+  );
+```
 
 ## Contributing
 
