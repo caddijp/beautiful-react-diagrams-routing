@@ -16,9 +16,14 @@ export function redistribute<P>({
     g.setNode(id, { width: 100, height: 100, x, y })
   );
 
-  links?.map(({ input, output }) =>
-    g.setEdge({ v: output.split("output-")[1], w: input.split("input-")[1] })
-  );
+  links?.map(({ input, output }) => {
+    const _input = input.match(/input-(\w)+/);
+    const out = output.match(/output-(\w)+/);
+    g.setEdge({
+      v: _input ? _input[1] : input,
+      w: out ? out[1] : output,
+    });
+  });
 
   dagre.layout(g);
 
