@@ -16,24 +16,26 @@ export function redistribute<P>({
     g.setNode(id, { width: 100, height: 100, x, y })
   );
 
-  links?.map(({ input, output }) => {
-    const _input = input.match(/input-(\w)+/);
-    const out = output.match(/output-(\w)+/);
+  links?.map(({ input, output }) =>
     g.setEdge({
-      v: _input ? _input[1] : input,
-      w: out ? out[1] : output,
-    });
-  });
+      v: input,
+      w: output,
+    })
+  );
 
   dagre.layout(g);
 
   return {
     nodes: g.nodes().map((id) => {
-      const { x, y } = g.node(id);
+      const node = g.node(id);
+      const graphNode = nodes.find((n) => n.id === id);
       return {
         id,
-        ...nodes.find((node) => node.id === id),
-        coordinates: [x, y],
+        ...graphNode,
+        coordinates: [
+          node.x || graphNode?.coordinates[0] || 0,
+          node.y || graphNode?.coordinates[1] || 0,
+        ],
       };
     }),
     links,
