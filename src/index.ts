@@ -16,7 +16,9 @@ export function redistribute<P>({
     g.setNode(id, { width: 100, height: 100, x, y })
   );
 
-  links?.map(({ input, output }) => g.setEdge({ v: output, w: input }));
+  links?.map(({ input, output }) =>
+    g.setEdge({ v: output.split("output-")[1], w: input.split("input-")[1] })
+  );
 
   dagre.layout(g);
 

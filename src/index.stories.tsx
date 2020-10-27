@@ -19,16 +19,16 @@ const nodes = new Factory<Node<unknown>>()
   .buildList(10);
 
 const links: Link[] = [
-  { input: "1", output: "2" },
-  { input: "1", output: "3" },
-  { input: "2", output: "3" },
-  { input: "1", output: "4" },
-  { input: "4", output: "10" },
-  { input: "8", output: "9" },
-  { input: "7", output: "8" },
-  { input: "9", output: "7" },
-  { input: "6", output: "3" },
-  { input: "9", output: "3" },
+  { input: "input-1", output: "output-2" },
+  { input: "input-1", output: "output-3" },
+  { input: "input-2", output: "output-3" },
+  { input: "input-1", output: "output-4" },
+  { input: "input-4", output: "output-10" },
+  { input: "input-8", output: "output-9" },
+  { input: "input-7", output: "output-8" },
+  { input: "input-9", output: "output-7" },
+  { input: "input-6", output: "output-3" },
+  { input: "input-9", output: "output-3" },
 ];
 
 const Template: Story<ComponentProps<typeof Diagram>> = ({
