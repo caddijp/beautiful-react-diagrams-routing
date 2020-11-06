@@ -1,27 +1,43 @@
-import type { DiagramSchema } from "beautiful-react-diagrams/@types/DiagramSchema";
+import type {
+  DiagramSchema,
+  Node,
+} from "beautiful-react-diagrams/@types/DiagramSchema";
 import dagre from "dagre";
 
 const { Graph } = dagre.graphlib;
 
-const g = new Graph({});
+const findNodeId = <P>(
+  node: Node<P>,
+  targetId: string,
+  portKey: "inputs" | "outputs"
+) =>
+  node.id === targetId ||
+  (node[portKey] || []).findIndex((i) => i.id === targetId) >= 0;
 
-export function redistribute<P>({
-  nodes,
-  links,
-}: DiagramSchema<P>): DiagramSchema<P> {
-  g.setGraph({});
-  g.setDefaultEdgeLabel(() => ({}));
+export function redistribute<P, T = unknown>(
+  { nodes, links }: DiagramSchema<P>,
+  graph?: dagre.graphlib.Graph<T>
+): DiagramSchema<P> {
+  let g = new Graph({});
+  if (!graph) {
+    g.setGraph({});
+    g.setDefaultEdgeLabel(() => ({}));
+  } else {
+    g = graph;
+  }
 
   nodes.map(({ id, coordinates: [x, y] }) =>
     g.setNode(id, { width: 100, height: 100, x, y })
   );
 
-  links?.map(({ input, output }) =>
-    g.setEdge({
-      v: input,
-      w: output,
-    })
-  );
+  (links || []).forEach(({ input, output }) => {
+    const edge = {
+      v: nodes.find((v) => findNodeId(v, input, "inputs"))!.id,
+      w: nodes.find((v) => findNodeId(v, output, "outputs"))!.id,
+    };
+
+    g.setEdge(edge);
+  });
 
   dagre.layout(g);
 
