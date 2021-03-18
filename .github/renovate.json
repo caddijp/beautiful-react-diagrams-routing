@@ -1,0 +1,8 @@
+{
+  "automerge": true,
+  "extends": ["config:js-lib"],
+  "schedule": "before 3am",
+  "timezone": "Asia/Tokyo",
+  "labels": ["Type: Maintenance"],
+  "semanticCommits": true
+}
