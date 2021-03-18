@@ -20,7 +20,7 @@
     "beautiful-react-diagrams": "^0.3.1"
   },
   "devDependencies": {
-    "@babel/core": "7.12.3",
+    "@babel/core": "7.13.10",
     "@caddijp/eslint-config": "0.2.0",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
@@ -32,7 +32,7 @@
     "@types/dagre": "0.7.44",
     "@types/jest": "26.0.15",
     "@types/rosie": "0.0.38",
-    "babel-loader": "8.1.0",
+    "babel-loader": "8.2.2",
     "beautiful-react-diagrams": "0.3.1",
     "conventional-changelog-cli": "2.1.0",
     "dagre": "0.8.5",
