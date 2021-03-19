@@ -30,7 +30,7 @@
     "@storybook/addon-storyshots": "6.0.26",
     "@storybook/react": "6.0.26",
     "@types/dagre": "0.7.44",
-    "@types/jest": "26.0.15",
+    "@types/jest": "26.0.21",
     "@types/rosie": "0.0.38",
     "babel-loader": "8.2.2",
     "beautiful-react-diagrams": "0.3.1",
