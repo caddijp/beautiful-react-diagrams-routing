@@ -36,7 +36,7 @@
     "beautiful-react-diagrams": "0.3.1",
     "conventional-changelog-cli": "2.1.0",
     "dagre": "0.8.5",
-    "eslint": "7.11.0",
+    "eslint": "7.22.0",
     "husky": "4.3.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "26.6.0",
