@@ -17,7 +17,7 @@
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "peerDependencies": {
-    "beautiful-react-diagrams": "^0.3.1"
+    "beautiful-react-diagrams": "^0.3.1 || ^0.5.0"
   },
   "devDependencies": {
     "@babel/core": "7.14.0",
@@ -33,7 +33,7 @@
     "@types/jest": "26.0.23",
     "@types/rosie": "0.0.39",
     "babel-loader": "8.2.2",
-    "beautiful-react-diagrams": "0.3.1",
+    "beautiful-react-diagrams": "0.5.1",
     "conventional-changelog-cli": "2.1.1",
     "dagre": "0.8.5",
     "eslint": "7.25.0",
